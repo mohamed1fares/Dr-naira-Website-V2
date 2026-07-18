@@ -614,15 +614,20 @@ a {
   .hero-container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 3rem;
+    gap: 2.5rem;
+  }
+  
+  .hero-image-wrap {
+    grid-row: 1; /* Puts image above the text on mobile/tablet */
   }
   
   .hero-content {
+    grid-row: 2;
     align-items: center;
   }
   
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   
   .hero-actions {
@@ -635,6 +640,14 @@ a {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    height: 70px;
+  }
+  
+  .nav-container {
+    padding: 0 1.25rem;
+  }
+  
   .nav-links {
     display: none;
   }
@@ -643,21 +656,80 @@ a {
     display: flex;
   }
   
+  .hero-section {
+    padding: 110px 0 50px; /* Reduced top padding since navbar is fixed and header is shorter */
+  }
+  
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1.25rem;
+  }
+  
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 2rem;
+    line-height: 1.35;
+    margin-bottom: 1.25rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.875rem;
+    width: 100%;
+  }
+  
+  .hero-actions a {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .hero-image {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
+    border-radius: 2.25rem;
+  }
+  
+  .image-border-glow {
+    border-radius: 2.5rem;
+    padding: 6px;
+    box-shadow: 0 15px 35px rgba(74, 20, 140, 0.4);
+  }
+  
+  .about-section, .services-section, .branches-section {
+    padding: 60px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
   }
   
   .footer-container {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
   }
   
   .footer-brand {
     flex-direction: column;
+    gap: 0.5rem;
   }
 }
+
