@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الموقع الرسمي لعيادات الدكتورة نيرة هاني - أخصائي الغدد الصماء والسكري والسمنة ومقاومة الإنسولين وتأخر النمو عند الأطفال.">
+  <title>عيادات د. نيرة هاني | للغدد الصماء والسكري والسمنة</title>
+  
+  <!-- Google Fonts: Cairo (Arabic) & Outfit (English digits/meta) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="logo.jpg" alt="شعار عيادة د. نيرة هاني" class="nav-logo">
+        <span class="nav-title">د. نيرة هاني</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero">الرئيسية</a>
+        <a href="#about">عن الدكتورة</a>
+        <a href="#services">تخصصاتنا</a>
+        <a href="#branches">فروعنا</a>
+        <a href="https://wa.me/201012345678" target="_blank" class="nav-cta-btn">حجز موعد</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">د. نيرة هاني</span>
+      <button class="drawer-close" id="drawerClose">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#hero">الرئيسية</a>
+      <a href="#about">عن الدكتورة</a>
+      <a href="#services">تخصصاتنا</a>
+      <a href="#branches">فروعنا</a>
+      <a href="https://wa.me/201012345678" target="_blank" class="drawer-cta-btn">حجز موعد الآن</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-badge">رعاية طبية تخصصية متكاملة ✨</span>
+        <h1 class="hero-title">رعاية تخصصية لـ <span>صحتك ونشاطك</span> مع د. نيرة هاني</h1>
+        <p class="hero-subtitle">أخصائي الغدد الصماء والسكري والسمنة ومقاومة الإنسولين. نقدم أحدث الحلول العلاجية المبنية على الأدلة الطبية بأرقى الخدمات الطبية في 4 فروع مجهزة بالكامل.</p>
+        
+        <div class="hero-actions">
+          <a href="#branches" class="btn-primary-gradient">📍 تصفح العيادات والفروع</a>
+          <a href="https://wa.me/201012345678?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D9%83%D8%B4%D9%81" target="_blank" class="btn-whatsapp-outline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.069.993 11.998.993c-5.462 0-9.902 4.375-9.906 9.8c-.001 1.748.477 3.454 1.385 4.965l-.982 3.585 3.654-.946zm11.518-6.113c-.3-.15-1.774-.875-2.048-.974-.275-.1-.475-.15-.674.15-.2.3-.775.975-.95 1.174-.175.2-.35.225-.65.075-1.025-.512-1.794-.94-2.52-2.185-.183-.317-.183-.655.075-.9.225-.225.425-.5.5-.675.075-.175.037-.325-.013-.425-.05-.1-4.75-1.125-5.65-1.325-.375-.087-.65.1-.75.325-.1.225-.5 1.05-.5 2.55s1.075 2.925 1.225 3.125c.15.2 2.1 3.2 5.075 4.5.72.31 1.285.5 1.714.64.726.23 1.386.2 1.905.12.58-.09 1.774-.725 2.024-1.399.25-.675.25-1.25.175-1.399-.075-.15-.275-.225-.575-.375z"/></svg>
+            تواصل معنا مباشرة
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="image-border-glow">
+          <img src="logo.jpg" alt="الدكتورة نيرة هاني" class="hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">من هي الدكتورة نيرة هاني؟</h2>
+        <div class="title-bar"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text-card glass-card">
+          <h3>أخصائي الغدد الصماء والسكري والسمنة</h3>
+          <p>تتمتع الدكتورة نيرة هاني بخبرة واسعة وسجل طبي متميز في علاج وتشخيص كافة أمراض الغدد الصماء والتمثيل الغذائي. وتؤمن العيادة بأهمية تقديم نهج طبي فردي ومخصص لكل مريض اعتماداً على أحدث بروتوكولات العلاج العالمية والمقاييس الدولية.</p>
+          <ul class="about-bullets">
+            <li>✨ علاج ومتابعة اضطرابات الغدة الدرقية والجار درقية.</li>
+            <li>✨ علاج تأخر النمو وقصر القامة الهرموني لدى الأطفال.</li>
+            <li>✨ إدارة وضبط السكري ومقاومة الإنسولين واضطرابات الأيض.</li>
+            <li>✨ برامج مخصصة لعلاق السمنة والنحافة وتكيس المبايض (PCOS).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">التخصصات والخدمات العلاجية</h2>
+        <div class="title-bar"></div>
+        <p class="section-subtitle">نوفر رعاية طبية متكاملة تشمل التخصصات التالية بأعلى دقة علمية:</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card glass-card">
+          <div class="service-icon">📊</div>
+          <h3>تنظيم السكري ومقاومة الإنسولين</h3>
+          <p>إدارة السكري من النوعين الأول والثاني، وتصميم خطط ضبط السكر التراكمي وتغذية مخصصة لمقاومة الإنسولين.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-icon">🦋</div>
+          <h3>علاج أمراض الغدة الدرقية</h3>
+          <p>تشخيص وعلاج كسل ونشاط الغدة الدرقية، والتهابات الغدد، وعمل الفحوصات والتحاليل الدورية اللازمة.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-icon">📏</div>
+          <h3>قصر القامة وهرمون النمو للأطفال</h3>
+          <p>متابعة منحنيات النمو لدى الأطفال وتوفير علاجات هرمون النمو للأطفال الذين يعانون من نقص إفراز الهرمون.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-icon">🥑</div>
+          <h3>علاج السمنة وتكيس المبايض (PCOS)</h3>
+          <p>خطط شاملة لعلاج تكيس المبايض الهرموني والميتابوليكي وعلاج السمنة بأحدث التقنيات الطبية الآمنة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Branches Section -->
+  <section id="branches" class="branches-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">عياداتنا وفروعنا الأربعة</h2>
+        <div class="title-bar"></div>
+        <p class="section-subtitle">تفضل بزيارتنا في الفرع الأقرب إليك للتواصل والحصول على الرعاية الطبية الفائقة:</p>
+      </div>
+
+      <div class="branches-grid">
+        <!-- Branch 1: Tagamoa -->
+        <div class="branch-card glass-card">
+          <div class="branch-badge">الفرع الرئيسي</div>
+          <h3>📍 عيادة التجمع الخامس</h3>
+          <div class="branch-details">
+            <p><strong>🏠 العنوان:</strong> مجمع العيادات الطبي، التجمع الخامس، القاهرة الجديدة</p>
+            <p><strong>📞 الهاتف:</strong> <span class="digit-font">01012345678</span></p>
+          </div>
+          <a href="https://wa.me/201012345678?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%2C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%A5%20%D9%81%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9" target="_blank" class="btn-branch-whatsapp">
+            💬 احجز في فرع التجمع
+          </a>
+        </div>
+
+        <!-- Branch 2: Rehab -->
+        <div class="branch-card glass-card">
+          <h3>📍 عيادة الرحاب</h3>
+          <div class="branch-details">
+            <p><strong>🏠 العنوان:</strong> المركز الطبي الأول، بجوار السوق التجاري، مدينة الرحاب</p>
+            <p><strong>📞 الهاتف:</strong> <span class="digit-font">01155566677</span></p>
+          </div>
+          <a href="https://wa.me/201155566677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%2C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%A5%20%D9%81%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B1%D8%AD%D8%A7%D8%A8" target="_blank" class="btn-branch-whatsapp">
+            💬 احجز في فرع الرحاب
+          </a>
+        </div>
+
+        <!-- Branch 3: Mohandessin / Dokki -->
+        <div class="branch-card glass-card">
+          <h3>📍 عيادة المهندسين</h3>
+          <div class="branch-details">
+            <p><strong>🏠 العنوان:</strong> شارع البطل أحمد عبد العزيز، المهندسين، الجيزة</p>
+            <p><strong>📞 الهاتف:</strong> <span class="digit-font">01099887766</span></p>
+          </div>
+          <a href="https://wa.me/201099887766?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%2C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%A5%20%D9%81%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D9%86" target="_blank" class="btn-branch-whatsapp">
+            💬 احجز في فرع المهندسين
+          </a>
+        </div>
+
+        <!-- Branch 4: Sheikh Zayed -->
+        <div class="branch-card glass-card">
+          <h3>📍 عيادة الشيخ زايد</h3>
+          <div class="branch-details">
+            <p><strong>🏠 العنوان:</strong> المحور المركزي، بجوار سعودي ماركت، الشيخ زايد</p>
+            <p><strong>📞 الهاتف:</strong> <span class="digit-font">01223344556</span></p>
+          </div>
+          <a href="https://wa.me/201223344556?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%2C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%A5%20%D9%81%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%B2%D8%A7%D9%8A%D8%AF" target="_blank" class="btn-branch-whatsapp">
+            💬 احجز في فرع الشيخ زايد
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="شعار عيادة د. نيرة" class="footer-logo">
+        <div>
+          <h4>د. نيرة هاني</h4>
+          <p>رعاية طبية نثق بها</p>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; <span class="digit-font">2026</span> عيادات د. نيرة هاني. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/201012345678" target="_blank" class="floating-whatsapp" aria-label="تواصل عبر الواتساب">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.069.993 11.998.993c-5.462 0-9.902 4.375-9.906 9.8c-.001 1.748.477 3.454 1.385 4.965l-.982 3.585 3.654-.946zm11.518-6.113c-.3-.15-1.774-.875-2.048-.974-.275-.1-.475-.15-.674.15-.2.3-.775.975-.95 1.174-.175.2-.35.225-.65.075-1.025-.512-1.794-.94-2.52-2.185-.183-.317-.183-.655.075-.9.225-.225.425-.5.5-.675.075-.175.037-.325-.013-.425-.05-.1-4.75-1.125-5.65-1.325-.375-.087-.65.1-.75.325-.1.225-.5 1.05-.5 2.55s1.075 2.925 1.225 3.125c.15.2 2.1 3.2 5.075 4.5.72.31 1.285.5 1.714.64.726.23 1.386.2 1.905.12.58-.09 1.774-.725 2.024-1.399.25-.675.25-1.25.175-1.399-.075-.15-.275-.225-.575-.375z"/></svg>
+  </a>
+
+  <!-- Simple JavaScript for Drawer Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerClose = document.getElementById('drawerClose');
+
+    menuToggle.addEventListener('click', () => {
+      mobileDrawer.classList.add('open');
+    });
+
+    drawerClose.addEventListener('click', () => {
+      mobileDrawer.classList.remove('open');
+    });
+
+    // Close drawer when clicking outside or on a link
+    document.querySelectorAll('.drawer-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
