@@ -617,12 +617,7 @@ a {
     gap: 2.5rem;
   }
   
-  .hero-image-wrap {
-    grid-row: 1; /* Puts image above the text on mobile/tablet */
-  }
-  
   .hero-content {
-    grid-row: 2;
     align-items: center;
   }
   
@@ -640,6 +635,15 @@ a {
 }
 
 @media (max-width: 768px) {
+  .hero-image-wrap {
+    grid-row: 1; /* Puts image above text on phone mode only */
+  }
+  
+  .hero-content {
+    grid-row: 2;
+    align-items: center;
+  }
+
   .navbar {
     height: 70px;
   }
