@@ -635,12 +635,12 @@ a {
 }
 
 @media (max-width: 768px) {
-  .hero-image-wrap {
-    grid-row: 1; /* Puts image above text on phone mode only */
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   .hero-content {
-    grid-row: 2;
     align-items: center;
   }
 
